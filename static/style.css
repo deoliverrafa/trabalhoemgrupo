@@ -8,8 +8,8 @@
     --font-Disney:'New Walt Disney Font', sans-serif;
     --color-cinzabroxa:#868686;
     --color-BrancoViado:#dddcdd;
-    --color-BolinhaAtiva: rgb(128, 128, 128);
-    --color-BolinhaNAtiva: rgb(255, 255, 255, 1);
+    --color-BolinhaBolinhaCinza: rgb(128, 128, 128);
+    --color-BolinhaBranca: rgb(255, 255, 255, 1);
 }
 
 *{
@@ -18,6 +18,11 @@
     box-sizing: border-box;
     transition: all 120ms ease-in-out ;
     font-family: 'Poppins', sans-serif, monospace;
+}
+
+body{
+    max-width: 100vw;
+    max-height: 100vh;
 }
 
 .nav-bar{
@@ -311,51 +316,51 @@
 }
 
 .div-bolinhas .bolinha1{
-    background-color: var(--color-BolinhaNAtiva);
+    background-color: var(--color-BolinhaBranca);
     width: 1em;
     height: 1em;
     border-radius: 1em;
 }
 .div-bolinhas .bolinha2{
-    background-color: var(--color-BolinhaNAtiva);
+    background-color: var(--color-BolinhaBranca);
     width: 1em;
     height: 1em;
     border-radius: 1em;
 }
 .div-bolinhas .bolinha3{
-    background-color: var(--color-BolinhaNAtiva);
+    background-color: var(--color-BolinhaBranca);
     width: 1em;
     height: 1em;
     border-radius: 1em;
 }
 .div-bolinhas .bolinha4{
-    background-color: var(--color-BolinhaNAtiva);
+    background-color: var(--color-BolinhaBranca);
     width: 1em;
     height: 1em;
     border-radius: 1em;
 }
 
 .div-bolinhas .bolinha1.active{
-    background-color: var(--color-BolinhaAtiva);
+    background-color: var(--colorBolinhaNAtiva);
     animation: bolinha-aparecer 400ms ease-in-out forwards;
 }
 .div-bolinhas .bolinha2.active{
-    background-color: var(--color-BolinhaAtiva);
+    background-color: var(--colorBolinhaNAtiva);
     animation: bolinha-aparecer 400ms ease-in-out forwards;
 }
 .div-bolinhas .bolinha3.active{
-    background-color: var(--color-BolinhaAtiva);
+    background-color: var(--colorBolinhaNAtiva);
     animation: bolinha-aparecer 400ms ease-in-out forwards;
 }
 .div-bolinhas .bolinha4.active{
-    background-color: var(--color-BolinhaAtiva);
+    background-color: var(--colorBolinhaNAtiva);
     animation: bolinha-aparecer 400ms ease-in-out forwards;
 }
 
 @keyframes slide-start {
     
     from{
-        transform: translateX(20em);
+        transform: translateX(0);
     }
 
     to{
