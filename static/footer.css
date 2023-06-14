@@ -20,13 +20,11 @@
     flex-direction: column;
     flex-wrap: nowrap;
     flex-flow: column;
-    background-color: blue;
 }
 
-.social-links{
+.footerContainer .socialNetworkContainer a{
     text-decoration: none;
     color: black;
-    
     width: 100%;
 }
 
