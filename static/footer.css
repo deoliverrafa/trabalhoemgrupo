@@ -1,15 +1,13 @@
 /********** FOOTER LAYOUT *******/
 .footerContainer {
-    align-items: center;
-    background-color: #fff;
+    background-color: #e7e7e7;
     bottom: 0;
     box-shadow: 0px -5px 10px rgba(0, 0, 0, .7);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 2em;
+    gap: 1em;
     height: auto;
-    justify-content: center;
     left: 0;
     position: absolute;
     text-align: center;
@@ -19,7 +17,8 @@
 .socialNetworkContainer {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    width: 100%;
 }
 
 /********** FOOTER TEXT **********/
