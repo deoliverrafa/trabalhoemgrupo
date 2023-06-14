@@ -6,13 +6,14 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 2em;
     height: auto;
     left: 0;
     position: fixed;
     text-align: center;
     width: 100vw;
     z-index: 120;
+    justify-content: center;
 }
 
 .socialNetworkContainer {
@@ -22,10 +23,9 @@
     flex-flow: column;
 }
 
-.footerContainer .socialNetworkContainer a{
+/********** FOOTER TEXT **********/
+.socialNetworkText {
+    color: var(--color-negroazulado);
     text-decoration: none;
-    color: black;
     width: 100%;
 }
-
-/********** FOOTER TEXT **********/
