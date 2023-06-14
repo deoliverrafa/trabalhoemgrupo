@@ -11,15 +11,24 @@
     height: auto;
     justify-content: center;
     left: 0;
-    position: absolute;
+    position: fixed;
     text-align: center;
     width: 100vw;
+    z-index: 120;
 }
 
 .socialNetworkContainer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    flex-flow: column;
+    background-color: blue;
+}
+
+.social-links{
+    text-decoration: none;
+    color: black;
+    
 }
 
 /********** FOOTER TEXT **********/
