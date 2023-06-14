@@ -8,7 +8,7 @@
     --font-Disney:'New Walt Disney Font', sans-serif;
     --color-cinzabroxa:#868686;
     --color-BrancoViado:#dddcdd;
-    --color-BolinhaBolinhaCinza: rgb(128, 128, 128);
+    --color-BolinhaCinza: rgb(128, 128, 128);
     --color-BolinhaBranca: rgb(255, 255, 255, 1);
 }
 
@@ -191,7 +191,7 @@ body{
     align-items: center;
     animation: slide-start 400ms ease-in-out forwards;
     flex-direction:column;
-    gap: 2em;
+    gap: 4em;
 }
 
 .slide-box .first-slide-box.active h1{
@@ -202,11 +202,11 @@ body{
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 1em;
 }
 
 .slide-box .first-slide-box.active p{
     font-size: 1.3em;
+    color: var(--color-BrancoViado);
 }
 
 .slide-box .first-slide-box.active i{
@@ -247,7 +247,6 @@ body{
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 1em;
 }
 
 .slide-box .second-slide-box.active p{
@@ -270,7 +269,7 @@ body{
 
 .slide-box .third-slide-box.active{
     z-index: 89;
-    background-image: url(https://wallpaperaccess.com/full/19067.jpg);
+    background-image: url(https://png.pngtree.com/background/20230426/original/pngtree-pagoda-tower-lit-up-in-cherry-blossoms-at-night-picture-image_2484289.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -282,7 +281,34 @@ body{
     align-items: center;
     animation: slide-start 400ms ease-in-out forwards;
     flex-direction:column;
-    gap: 2em;
+    gap: 4em;
+}
+
+.slide-box .third-slide-box.active h1{
+    font-family: var(--font-Disney);
+    letter-spacing: 10px;
+    font-size: 3em;
+    color: var(--color-BrancoViado);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.slide-box .third-slide-box.active p{
+    font-size: 1.3em;
+    color: var(--color-BrancoViado);
+}
+
+.slide-box .third-slide-box.active i{
+    width: 3em;
+    color: #000042;
+    background-color: rgba(215, 215, 215, .9);
+    border-radius: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    font-size: 1.4em;
 }
 
 .slide-box .fourth-slide-box.active{
@@ -302,6 +328,33 @@ body{
     gap: 4em;
 }
 
+.slide-box .fourth-slide-box.active h1{
+    font-family: var(--font-Disney);
+    letter-spacing: 10px;
+    font-size: 4em;
+    color: var(--color-BrancoViado);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.slide-box .fourth-slide-box.active p{
+    font-size: 1.3em;
+    color: var(--color-BrancoViado);
+}
+
+.slide-box .fourth-slide-box.active i{
+    width: 3em;
+    color: #000042;
+    background-color: rgba(215, 215, 215, .9);
+    border-radius: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    font-size: 1.4em;
+}
+
 .div-bolinhas{
     width: 50vw;
     height: 2em;
@@ -316,44 +369,48 @@ body{
 }
 
 .div-bolinhas .bolinha1{
-    background-color: var(--color-BolinhaBranca);
+    background-color: var(--color-BolinhaCinza);
     width: 1em;
     height: 1em;
     border-radius: 1em;
+    cursor: pointer;
 }
 .div-bolinhas .bolinha2{
-    background-color: var(--color-BolinhaBranca);
+    background-color: var(--color-BolinhaCinza);
     width: 1em;
     height: 1em;
     border-radius: 1em;
+    cursor: pointer;
 }
 .div-bolinhas .bolinha3{
-    background-color: var(--color-BolinhaBranca);
+    background-color: var(--color-BolinhaCinza);
     width: 1em;
     height: 1em;
     border-radius: 1em;
+    cursor: pointer;
 }
 .div-bolinhas .bolinha4{
-    background-color: var(--color-BolinhaBranca);
+    background-color: var(--color-BolinhaCinza);
     width: 1em;
     height: 1em;
     border-radius: 1em;
+    cursor: pointer;
 }
 
 .div-bolinhas .bolinha1.active{
-    background-color: var(--colorBolinhaNAtiva);
+    background-color: var(--color-BolinhaBranca);
     animation: bolinha-aparecer 400ms ease-in-out forwards;
 }
 .div-bolinhas .bolinha2.active{
-    background-color: var(--colorBolinhaNAtiva);
+    background-color: var(--color-BolinhaBranca);
     animation: bolinha-aparecer 400ms ease-in-out forwards;
 }
 .div-bolinhas .bolinha3.active{
-    background-color: var(--colorBolinhaNAtiva);
+    background-color: var(--color-BolinhaBranca);
     animation: bolinha-aparecer 400ms ease-in-out forwards;
 }
 .div-bolinhas .bolinha4.active{
-    background-color: var(--colorBolinhaNAtiva);
+    background-color: var(--color-BolinhaBranca);
     animation: bolinha-aparecer 400ms ease-in-out forwards;
 }
 
@@ -403,29 +460,47 @@ body{
         font-size: 1.3em;
     }
 
+    /* Slides ON cellPhone */
+
+    .slide-container{
+       height: 35em;
+    }
+
+    .div-bolinhas{
+        position: absolute;
+        top: 95%;
+    }
+
+
     .slide-box{
         width: 100%;
+        height: 100%;
+        position: relative;
     }
 
     .slide-box .first-slide-box.active{
-        width: 100%;
-        border-radius: 0;
+        width: 80%;
+        border-radius: 1em;
+        text-align: center;
     }
     
     .slide-box .second-slide-box.active{
-        width: 100%;
-        border-radius: 0;
+        width: 80%;
+        border-radius: 1em;
+        text-align: center;
     
     }
     
     .slide-box .third-slide-box.active{
-        width: 100%;
-        border-radius: 0;
+        width: 80%;
+        border-radius: 1em;
+        text-align: center;
     }
     
     .slide-box .fourth-slide-box.active{
-        width: 100%;
-        border-radius: 0;
+        width: 80%;
+        border-radius: 1em;
+        text-align: center;
     }
 
 }
