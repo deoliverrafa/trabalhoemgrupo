@@ -1,0 +1,426 @@
+@import url('https://fonts.cdnfonts.com/css/new-walt-disney-font');
+            
+:root{
+    --color-vermelho:#F05929;
+    --color-verde: #00ad46;
+    --color-amarelo: #FFB727;
+    --color-negroazulado:#000042;
+    --font-Disney:'New Walt Disney Font', sans-serif;
+    --color-cinzabroxa:#868686;
+    --color-BrancoViado:#dddcdd;
+    --color-BolinhaAtiva: rgb(128, 128, 128);
+    --color-BolinhaNAtiva: rgb(255, 255, 255, 1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 120ms ease-in-out ;
+    font-family: 'Poppins', sans-serif, monospace;
+}
+
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 5em;
+    position: sticky;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .7);
+}
+
+.nav-bar .nav-bar-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 3em;
+    font-weight: 500;
+}
+
+.nav-bar .logo{
+    position: absolute;
+    left: 2em;
+}
+
+.nav-bar .logo-link{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-bar .logo .km-logo{
+    font-size: .5em;
+    text-decoration: none;
+}
+
+.nav-bar .nav-bar-list .item-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.nav-bar .nav-bar-list .item-list .cool-link{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5em;
+    transition: 80ms ease-in-out;
+}
+
+.nav-bar .nav-bar-list .item-list .cool-link:hover{
+    border-bottom: solid 2px black;
+    border-radius: 2px;
+    transform: translateY(-4px);
+}
+
+.nav-bar .logo .logo-link .span-4{
+    font-size: 1.3em;
+    color: var(--color-verde);
+    font-weight: bolder;
+    font-weight: bolder;
+}
+.nav-bar .logo .logo-link .span-5{
+    font-size: 1.3em;
+    color: var(--color-amarelo);
+    font-weight: bolder;
+    font-weight: bolder;
+}
+.nav-bar .logo .logo-link .span-6{
+    font-size: 1.3em;
+    color: var(--color-vermelho);
+    font-weight: bolder;
+    font-weight: bolder;
+}
+
+.search-div{
+    position: absolute;
+    right: 2em;
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+}
+
+.search-div .search-button{
+    width: 2.3em;
+    transition: 80ms ease-in-out;
+    height: 2em;
+    border: 2px solid black;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-div .search-button i{
+    font-size: 1.5em;
+}
+
+.search-div .search-button:hover{
+    box-shadow: 0px 0px 8px rgb(55, 111, 215);
+    outline: none;    
+    color: #FFB727;
+}
+
+.search-div .input-search{
+    width: 10em;
+    height: 2em;
+    transition: 80ms ease-in-out;
+    cursor: pointer;
+    text-indent: .5em;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+.search-div .input-search:hover:focus::marker{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, .7);
+    outline: none;
+}
+
+.button-bars{
+    display: none;
+}
+
+/* Slider Format */
+
+.slide-container{
+    position: relative;
+    top: 3em;
+    height: 30em;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+}
+
+.first-slide-box, .second-slide-box, .third-slide-box, .fourth-slide-box{
+    display: none;
+}
+
+.slide-box .first-slide-box.active{
+    z-index: 89;
+    background-image: url(https://static.vecteezy.com/ti/fotos-gratis/p2/19464814-natureza-do-fundo-do-ceu-ceu-azul-fundo-nuvem-luz-verao-dia-ensolarado-clima-espaco-claro-dom-branco-alto-bonita-panorama-ao-ar-livre-luz-solar-nublado-ao-ar-livre-abstrato-papel-de-parede-gratis-foto.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1em;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slide-start 400ms ease-in-out forwards;
+    flex-direction:column;
+    gap: 2em;
+}
+
+.slide-box .first-slide-box.active h1{
+    font-family: var(--font-Disney);
+    letter-spacing: 10px;
+    font-size: 4em;
+    color: var(--color-negroazulado);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.slide-box .first-slide-box.active p{
+    font-size: 1.3em;
+}
+
+.slide-box .first-slide-box.active i{
+    width: 3em;
+    color: rgb(215, 215, 215);
+    background-color: #000042;
+    border-radius: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    font-size: 1.4em;
+}
+
+.slide-box .second-slide-box.active{
+    z-index: 89;
+    background-image: url(https://s1.1zoom.me/big3/271/Spain_Stones_Sea_499991.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1em;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slide-start 400ms ease-in-out forwards;
+    flex-direction:column;
+    gap: 4em;
+    text-align: center;
+}
+
+.slide-box .second-slide-box.active h1{
+    font-family: var(--font-Disney);
+    letter-spacing: 10px;
+    font-size: 4em;
+    color: var(--color-BrancoViado);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.slide-box .second-slide-box.active p{
+    font-size: 1.3em;
+    color: var(--color-BrancoViado);
+}
+
+.slide-box .second-slide-box.active i{
+    width: 3em;
+    color: #000042;
+    background-color: rgba(215, 215, 215, .9);
+    border-radius: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3em;
+    font-size: 1.4em;
+}
+
+
+.slide-box .third-slide-box.active{
+    z-index: 89;
+    background-image: url(https://wallpaperaccess.com/full/19067.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1em;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slide-start 400ms ease-in-out forwards;
+    flex-direction:column;
+    gap: 2em;
+}
+
+.slide-box .fourth-slide-box.active{
+    z-index: 89;
+    background-image: url(https://i.pinimg.com/originals/bc/88/2c/bc882c4a00eb417c655026731ae35255.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 1em;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: slide-start 400ms ease-in-out forwards;
+    flex-direction:column;
+    gap: 4em;
+}
+
+.div-bolinhas{
+    width: 50vw;
+    height: 2em;
+    position: absolute;
+    z-index: 120;
+    top: 27em;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4em;
+}
+
+.div-bolinhas .bolinha1{
+    background-color: var(--color-BolinhaNAtiva);
+    width: 1em;
+    height: 1em;
+    border-radius: 1em;
+}
+.div-bolinhas .bolinha2{
+    background-color: var(--color-BolinhaNAtiva);
+    width: 1em;
+    height: 1em;
+    border-radius: 1em;
+}
+.div-bolinhas .bolinha3{
+    background-color: var(--color-BolinhaNAtiva);
+    width: 1em;
+    height: 1em;
+    border-radius: 1em;
+}
+.div-bolinhas .bolinha4{
+    background-color: var(--color-BolinhaNAtiva);
+    width: 1em;
+    height: 1em;
+    border-radius: 1em;
+}
+
+.div-bolinhas .bolinha1.active{
+    background-color: var(--color-BolinhaAtiva);
+    animation: bolinha-aparecer 400ms ease-in-out forwards;
+}
+.div-bolinhas .bolinha2.active{
+    background-color: var(--color-BolinhaAtiva);
+    animation: bolinha-aparecer 400ms ease-in-out forwards;
+}
+.div-bolinhas .bolinha3.active{
+    background-color: var(--color-BolinhaAtiva);
+    animation: bolinha-aparecer 400ms ease-in-out forwards;
+}
+.div-bolinhas .bolinha4.active{
+    background-color: var(--color-BolinhaAtiva);
+    animation: bolinha-aparecer 400ms ease-in-out forwards;
+}
+
+@keyframes slide-start {
+    
+    from{
+        transform: translateX(20em);
+    }
+
+    to{
+        transform: translateX(0);
+        color: white;
+    }
+}
+
+@keyframes bolinha-aparecer {
+    from{
+        opacity: 0%;
+    }
+
+    to{
+        opacity: 100%;
+    }
+}
+
+/* MEDIAS QUERY */
+
+@media (max-width: 827px) {
+    
+    .nav-bar .nav-bar-list{
+        display: none;
+    }
+    
+    .nav-bar .search-div{
+        display: none;
+    }
+
+    .button-bars{
+    display: flex;
+    position: absolute;
+    right: 1.5em;
+    cursor: pointer;
+    font-size: 1.5em;
+    }
+
+    .button-bars i{
+        font-size: 1.3em;
+    }
+
+    .slide-box{
+        width: 100%;
+    }
+
+    .slide-box .first-slide-box.active{
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    .slide-box .second-slide-box.active{
+        width: 100%;
+        border-radius: 0;
+    
+    }
+    
+    .slide-box .third-slide-box.active{
+        width: 100%;
+        border-radius: 0;
+    }
+    
+    .slide-box .fourth-slide-box.active{
+        width: 100%;
+        border-radius: 0;
+    }
+
+}
