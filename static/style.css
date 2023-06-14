@@ -320,6 +320,7 @@ body{
     border-radius: 1em;
     width: 75%;
     height: 100%;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -331,7 +332,7 @@ body{
 .slide-box .fourth-slide-box.active h1{
     font-family: var(--font-Disney);
     letter-spacing: 10px;
-    font-size: 4em;
+    font-size: 3em;
     color: var(--color-BrancoViado);
     align-items: center;
     display: flex;

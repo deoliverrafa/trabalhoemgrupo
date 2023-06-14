@@ -9,8 +9,8 @@ const bolinha2 = document.querySelector('.bolinha2')
 const bolinha3 = document.querySelector('.bolinha3')
 const bolinha4 = document.querySelector('.bolinha4')
 
-let contador = 0;
-let contadorBolinha = 0;
+let contador = 3;
+let contadorBolinha = 3;
 var timer = 3000;
 
 actualSlide();
@@ -100,6 +100,7 @@ function actualSlide(){
 }
 
 bolinha1.onclick = function (){
+
         first_slide.classList.remove('active');
         second_slide.classList.add('active');
         third_slide.classList.remove('active');
@@ -109,7 +110,8 @@ bolinha1.onclick = function (){
 }
 
 bolinha2.onclick = function (){
-    first_slide.classList.remove('active');
+
+        first_slide.classList.remove('active');
         second_slide.classList.remove('active');
         third_slide.classList.add('active');
         fourth_slide.classList.remove('active');
@@ -119,7 +121,8 @@ bolinha2.onclick = function (){
 
 
 bolinha3.onclick = function (){
-    first_slide.classList.add('active');
+
+        first_slide.classList.add('active');
         second_slide.classList.remove('active');
         third_slide.classList.remove('active');
         fourth_slide.classList.remove('active');
@@ -129,7 +132,8 @@ bolinha3.onclick = function (){
 
 
 bolinha4.onclick = function (){
-    first_slide.classList.add('active');
+
+        first_slide.classList.add('active');
         second_slide.classList.remove('active');
         third_slide.classList.remove('active');
         fourth_slide.classList.remove('active');
@@ -138,7 +142,7 @@ bolinha4.onclick = function (){
 }
 
 
-setInterval(() => {
-    actualSlide();
-    passSlides();
-}, timer);
+// setInterval(() => {
+//     actualSlide();
+//     passSlides();
+// }, timer);
