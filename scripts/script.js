@@ -1,5 +1,8 @@
 const button_bars = document.querySelector('.button-bars .material-icons')
-const slides = document.querySelectorAll('#slide');
+const hamburger = document.querySelector('.fa-solid.fa-bars')
+const x_mark = document.querySelector('.fa-solid.fa-xmark')
+const nav_bar = document.querySelector('.nav-bar')
+const slides = document.querySelectorAll('#slide')
 const first_slide = document.querySelector('.first-slide-box');
 const second_slide = document.querySelector('.second-slide-box');
 const third_slide = document.querySelector('.third-slide-box');
@@ -54,8 +57,6 @@ function passSlides(){
 
 }
 }
-    console.log("Im here");
-    console.log("O contador: " + contador)
 }
 
 function actualSlide(){
@@ -138,6 +139,18 @@ bolinha4.onclick = function (){
         fourth_slide.classList.remove('active');
         contador = 3;
         contadorBolinha = 3;
+}
+
+hamburger.onclick = function(){
+    nav_bar.classList.toggle('active');    
+    x_mark.classList.add('active');
+    hamburger.classList.add('none')
+}
+
+x_mark.onclick = function(){
+    nav_bar.classList.toggle('active');    
+    x_mark.classList.remove('active');
+    hamburger.classList.remove('none')
 }
 
 
