@@ -9,7 +9,7 @@
     gap: 2em;
     height: auto;
     left: 0;
-    position: static;
+    position: fixed;
     text-align: center;
     width: 100vw;
     z-index: 120;
@@ -24,6 +24,14 @@
 }
 
 /********** FOOTER TEXT **********/
+.socialNetworkContainer>a {
+    font-size: 8px;
+}
+
+.socialNetworkText>h2 {
+    font-size: 16px;
+}
+
 .socialNetworkText {
     color: var(--color-negroazulado);
     text-decoration: none;
