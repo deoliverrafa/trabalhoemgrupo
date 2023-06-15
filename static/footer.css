@@ -9,11 +9,13 @@
     gap: 2em;
     height: auto;
     left: 0;
-    position: fixed;
+    position: relative;
     text-align: center;
     width: 100vw;
-    z-index: 120;
     justify-content: center;
+    max-height: 30em;
+    z-index: 120;
+    text-align: center;
 }
 
 .socialNetworkContainer {

@@ -115,8 +115,8 @@ bolinha2.onclick = function (){
         second_slide.classList.remove('active');
         third_slide.classList.add('active');
         fourth_slide.classList.remove('active');
-        contador = 0;
-        contadorBolinha = 0;
+        contador = 1;
+        contadorBolinha = 1;
 }
 
 
@@ -126,8 +126,8 @@ bolinha3.onclick = function (){
         second_slide.classList.remove('active');
         third_slide.classList.remove('active');
         fourth_slide.classList.remove('active');
-        contador = 0;
-        contadorBolinha = 0;
+        contador = 2;
+        contadorBolinha = 2;
 }
 
 
@@ -137,12 +137,20 @@ bolinha4.onclick = function (){
         second_slide.classList.remove('active');
         third_slide.classList.remove('active');
         fourth_slide.classList.remove('active');
-        contador = 0;
-        contadorBolinha = 0;
+        contador = 3;
+        contadorBolinha = 3;
+}
+
+function resetTimer{
+
+    if((bolinha1 || bolinha2 || bolinha3 || bolinha4).classList('Active')){
+
+    }
+
 }
 
 
-// setInterval(() => {
-//     actualSlide();
-//     passSlides();
-// }, timer);
+setInterval(() => {
+    actualSlide();
+    passSlides();
+}, timer);
