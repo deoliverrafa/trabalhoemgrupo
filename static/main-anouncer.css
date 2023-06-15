@@ -68,15 +68,15 @@
     font-weight: bold;
     font-size: 1.2em;
     border-radius: 1em;
-    border: 1px solid var(--color-BrancoViado);
+    border: 3px solid var(--color-BrancoViado);
     width: 6em;
     height: 2em;
+    cursor: pointer;
 }
-
 
 .second-ad{
     display: flex;
-    background-image: url(https://wallpapercave.com/wp/wp3336541.jpg);
+    background-image: url(https://wallpaperaccess.com/full/2170245.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -118,7 +118,7 @@
     font-weight: bold;
     font-size: 1.2em;
     border-radius: 1em;
-    border: 1px solid var(--color-BrancoViado);
+    border: 3px solid var(--color-BrancoViado);
     width: 6em;
     height: 2em;
 }
@@ -126,7 +126,7 @@
 
 .third-ad{
     display: flex;
-    background-image: url(https://wallpapercave.com/wp/wp3336541.jpg);
+    background-image: url(https://i.pinimg.com/originals/20/89/04/208904cab1136bb1cbcd07263b9ec013.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -168,14 +168,14 @@
     font-weight: bold;
     font-size: 1.2em;
     border-radius: 1em;
-    border: 1px solid var(--color-BrancoViado);
+    border: 3px solid var(--color-BrancoViado);
     width: 6em;
     height: 2em;
 }
 
 .fourth-ad{
     display: flex;
-    background-image: url(https://wallpapercave.com/wp/wp3336541.jpg);
+    background-image: url(https://destinosnotaveis.com.br/wp-content/uploads/2022/02/Manaus-Amazonas-1024x768.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -217,7 +217,142 @@
     font-weight: bold;
     font-size: 1.2em;
     border-radius: 1em;
-    border: 1px solid var(--color-BrancoViado);
+    border: 3px solid var(--color-BrancoViado);
     width: 6em;
     height: 2em;
+}
+
+.fifth-ad{
+    display: flex;
+    background-image: url(https://aluguelgramado.com.br/wp-content/uploads/2018/10/cidade-06.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 19em;
+    height: 19em;
+    border-radius: 1em;
+    transition: 120ms ease-in-out;
+    position: relative;
+    justify-content: center;
+}
+
+.fifth-ad:hover{
+    transform: scale(1.1);
+    border: 1px solid rgba(0, 0, 0, .2);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+}
+
+.fifth-ad h3{
+    position: absolute;
+    top: 25%;
+    color: var(--color-BrancoViado);
+    font-size: 1.5em;
+}
+
+.fifth-ad span{
+    position: absolute;
+    color: var(--color-BrancoViado);
+    top: 45%;
+    font-size: 1.3em;
+}
+
+.fifth-ad p{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-BrancoViado);
+    top: 60%;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 1em;
+    border: 3px solid var(--color-BrancoViado);
+    width: 6em;
+    height: 2em;
+}
+
+.sixth-ad{
+    display: flex;
+    background-image: url(https://i.pinimg.com/originals/c3/3f/76/c33f76669bdfe9916e26dd075bf3eac7.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 19em;
+    height: 19em;
+    border-radius: 1em;
+    transition: 120ms ease-in-out;
+    position: relative;
+    justify-content: center;
+}
+
+.sixth-ad:hover{
+    transform: scale(1.1);
+    border: 1px solid rgba(0, 0, 0, .2);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 1);
+}
+
+.sixth-ad h3{
+    position: absolute;
+    top: 25%;
+    color: var(--color-BrancoViado);
+    font-size: 1.5em;
+}
+
+.sixth-ad span{
+    position: absolute;
+    color: var(--color-BrancoViado);
+    top: 45%;
+    font-size: 1.3em;
+}
+
+.sixth-ad p{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-BrancoViado);
+    top: 60%;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 1em;
+    border: 3px solid var(--color-BrancoViado);
+    width: 6em;
+    height: 2em;
+}
+
+.first-ad p:hover{
+    background-color: white;
+    color: black;
+    cursor:pointer;
+    transform: scale(1.1);
+}
+.second-ad p:hover{
+    background-color: white;
+    color: black;
+    cursor:pointer;
+    transform: scale(1.1);
+}
+.third-ad p:hover{
+    background-color: white;
+    color: black;
+    cursor:pointer;
+    transform: scale(1.1);
+}
+.fourth-ad p:hover{
+    background-color: white;
+    color: black;
+    cursor:pointer;
+    transform: scale(1.1);
+}
+.fifth-ad p:hover{
+    background-color: white;
+    color: black;
+    cursor:pointer;
+    transform: scale(1.1);
+}
+.sixth-ad p:hover{
+    background-color: white;
+    color: black;
+    cursor:pointer;
+    transform: scale(1.1);
 }

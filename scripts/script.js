@@ -9,13 +9,12 @@ const bolinha2 = document.querySelector('.bolinha2')
 const bolinha3 = document.querySelector('.bolinha3')
 const bolinha4 = document.querySelector('.bolinha4')
 
-let contador = 3;
-let contadorBolinha = 3;
-var timer = 3000;
+let contador = 0;
+let contadorBolinha = 0;
+let interval = 3000;
 
 actualSlide();
 passSlides();
-
 
 function passSlides(){
 
@@ -141,16 +140,8 @@ bolinha4.onclick = function (){
         contadorBolinha = 3;
 }
 
-function resetTimer{
-
-    if((bolinha1 || bolinha2 || bolinha3 || bolinha4).classList('Active')){
-
-    }
-
-}
-
 
 setInterval(() => {
     actualSlide();
     passSlides();
-}, timer);
+}, interval);
