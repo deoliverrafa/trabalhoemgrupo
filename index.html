@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./static/style.css">
     <link rel="stylesheet" href="./static/footer.css">
     <link rel="stylesheet" href="./static/main-anouncer.css">
+    <link rel="stylesheet" href="./static/relatos.css">
     <!-- FRAMEWORK IMPORT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,8 +29,8 @@
             <h2 class="logo"><a href="index.html" class="logo-link"><span class="span-4">4</span><span class="span-5">5</span><span class="span-6">6</span></a><span class="km-logo">KM</span></h2>
             <ul class="nav-bar-list">
                 <li class="item-list"> <a href="" class="cool-link"> <i class="material-icons">dashboard</i> Inicio </a> </li>
-                <li class="item-list"> <a href="" class="cool-link"> <i class="material-icons">flight_takeoff</i> Planos </a> </li>
-                <li class="item-list"> <a href="" class="cool-link"> <i class="material-icons">phone</i> Contato </a> </li>
+                <li class="item-list"> <a href="#planos" class="cool-link"> <i class="material-icons">flight_takeoff</i> Planos </a> </li>
+                <li class="item-list"> <a href="#contato" class="cool-link"> <i class="material-icons">phone</i> Contato </a> </li>
             </ul>
 
             <div class="search-div"><input class="input-search" type="search" name="search" id="search" placeholder="Pesquise"><button class="search-button"><i class="material-icons">search</i></button></div>
@@ -72,7 +73,7 @@
     </div>
 
 
-    <div class="passagens-alert">
+    <div class="passagens-alert" id="planos">
     <h3>Confira as nossas Passagens</h3>
     </div>  
 
@@ -113,8 +114,78 @@
             <p>399,90R$</p>
         </div>
 
+<!-- RELATES SECTION -->
+
+        <h3 class="relate-title">Confira aqui os relatos dos nossos clientes</h3>
+
+        <div class="relate-slide-container"> 
+            <div class="slide-box">
+                <div class="first-relate-slide-box" id="relate-slide" >
+                    <h1>Antônio</h1>
+                    <div class="person-icon"></div>
+                    <p>A melhor empresa de viagem da América Latina</p>
+
+                    <div class="star-div">
+                        <i class="fa-solid fa-star" id="star-icon"></i>
+                        <i class="fa-solid fa-star" id="star-icon"></i>
+                        <i class="fa-solid fa-star" id="star-icon"></i>
+                        <i class="fa-solid fa-star" id="star-icon"></i>
+                        <i class="fa-solid fa-star" id="star-icon"></i>
+                    </div>
+
+                </div>
+                <div class="second-relate-slide-box" id="relate-slide" >
+                    <h1>Wellington</h1>
+                    <div class="person-icon"></div>
+                    <p>Passagens baratas e boas referências</p>
+
+                    <div class="star-div">
+                        <i class="fa-solid fa-star" id="star-icon"></i>
+                        <i class="fa-solid fa-star" id="star-icon"></i>
+                        <i class="fa-solid fa-star" id="star-icon"></i>
+                        <i class="fa-solid fa-star" id="star-icon"></i>
+                        <i class="fa-solid fa-star" id="star-icon"></i>
+                    </div>
+                </div>
+                <div class="third-relate-slide-box" id="relate-slide" >
+                    <h1>Charles Chapplin</h1>
+                    <div class="person-icon"></div>
+                    <p>Nada a dizer!!</p>
+
+                    <div class="star-div">
+                        <i class="fa-solid fa-star" id="star-icon"></i>
+                        <i class="fa-solid fa-star" id="star-icon"></i>
+                        <i class="fa-solid fa-star" id="star-icon"></i>
+                        <i class="fa-solid fa-star" id="star-icon"></i>
+                        <i class="fa-solid fa-star" id="star-icon"></i>
+                    </div>
+                </div>
+                <div class="fourth-relate-slide-box" id="relate-slide" >
+                    <h1>Anna Heistoffen</h1>
+                    <div class="person-icon"></div>
+                    <p>Uma esperiência única para vida</p>
+
+                    <div class="star-div">
+                        <i class="fa-solid fa-star" id="star-icon"></i>
+                        <i class="fa-solid fa-star" id="star-icon"></i>
+                        <i class="fa-solid fa-star" id="star-icon"></i>
+                        <i class="fa-solid fa-star" id="star-icon"></i>
+                        <i class="fa-solid fa-star" id="star-icon"></i>
+                    </div>
+                </div>
+                <div class="div-bolinhas">
+                    <div class="relate-bolinha1"></div>
+                    <div class="relate-bolinha2"></div>
+                    <div class="relate-bolinha3"></div>
+                    <div class="relate-bolinha4"></div>
+                </div>
+            </div>
+        </div>
+
+<!-- RELATES SECTION END -->
+
     <!-- FOOTER -->
-    <footer class="footerContainer">
+    <footer class="footerContainer" id="contato">
         <div class="socialNetworkContainer">
             <h2 class="socialNetworkText">Rafael Oliveira</h2>
             <a class="socialNetworkText" href="#">@deoliverrafa</a>

@@ -11,6 +11,15 @@ const bolinha1 = document.querySelector('.bolinha1')
 const bolinha2 = document.querySelector('.bolinha2')
 const bolinha3 = document.querySelector('.bolinha3')
 const bolinha4 = document.querySelector('.bolinha4')
+const first_relate_slide = document.querySelector('.first-relate-slide-box')
+const second_relate_slide = document.querySelector('.second-relate-slide-box')
+const third_relate_slide = document.querySelector('.third-relate-slide-box')
+const fourth_relate_slide = document.querySelector('.fourth-relate-slide-box')
+const relate_bolinha1 = document.querySelector('.relate-bolinha1')
+const relate_bolinha2 = document.querySelector('.relate-bolinha2')
+const relate_bolinha3 = document.querySelector('.relate-bolinha3')
+const relate_bolinha4 = document.querySelector('.relate-bolinha4')
+
 
 let contador = 0;
 let contadorBolinha = 0;
@@ -26,6 +35,14 @@ function passSlides(){
         second_slide.classList.add('active');
         third_slide.classList.remove('active');
         fourth_slide.classList.remove('active');
+
+        // relateSlides
+
+        first_relate_slide.classList.remove('active')
+        second_relate_slide.classList.add('active')
+        third_relate_slide.classList.remove('active')
+        fourth_relate_slide.classList.remove('active')
+
         contador++;
     } else{
 
@@ -34,6 +51,14 @@ function passSlides(){
         second_slide.classList.remove('active');
         third_slide.classList.add('active');
         fourth_slide.classList.remove('active');
+        
+        // relateSlides
+
+        first_relate_slide.classList.remove('active')
+        second_relate_slide.classList.remove('active')
+        third_relate_slide.classList.add('active')
+        fourth_relate_slide.classList.remove('active')
+
         contador++;
     } else{
 
@@ -42,6 +67,14 @@ function passSlides(){
         second_slide.classList.remove('active');
         third_slide.classList.remove('active');
         fourth_slide.classList.add('active');
+
+        // relateSlides
+
+        first_relate_slide.classList.remove('active')
+        second_relate_slide.classList.remove('active')
+        third_relate_slide.classList.remove('active')
+        fourth_relate_slide.classList.add('active')
+
         contador++;
     } else{
         contador = 0;
@@ -50,6 +83,14 @@ function passSlides(){
         second_slide.classList.remove('active');
         third_slide.classList.remove('active');
         fourth_slide.classList.remove('active');
+
+        // relateSlides
+
+        first_relate_slide.classList.add('active')
+        second_relate_slide.classList.remove('active')
+        third_relate_slide.classList.remove('active')
+        fourth_relate_slide.classList.remove('active')
+
     }
     if (contador == 0) {
         contador++;
@@ -66,6 +107,14 @@ function actualSlide(){
         bolinha2.classList.add('active');
         bolinha3.classList.remove('active');
         bolinha4.classList.remove('active');
+
+        // bolinhaRelatos
+
+        relate_bolinha1.classList.remove('active')
+        relate_bolinha2.classList.add('active')
+        relate_bolinha3.classList.remove('active')
+        relate_bolinha4.classList.remove('active')
+
         contadorBolinha++;
     } else{
 
@@ -74,6 +123,15 @@ function actualSlide(){
         bolinha2.classList.remove('active');
         bolinha3.classList.add('active');
         bolinha4.classList.remove('active');
+
+        // bolinhaRelatos
+
+        relate_bolinha1.classList.remove('active')
+        relate_bolinha2.classList.remove('active')
+        relate_bolinha3.classList.add('active')
+        relate_bolinha4.classList.remove('active')
+
+
         contadorBolinha++;
     } else {
     
@@ -82,6 +140,14 @@ function actualSlide(){
         bolinha2.classList.remove('active');
         bolinha3.classList.remove('active');
         bolinha4.classList.add('active');
+
+        // bolinhaRelatos
+
+        relate_bolinha1.classList.remove('active')
+        relate_bolinha2.classList.remove('active')
+        relate_bolinha3.classList.remove('active')
+        relate_bolinha4.classList.add('active')
+
         contadorBolinha++;
     } else{
             contadorBolinha = 0;
@@ -90,6 +156,14 @@ function actualSlide(){
             bolinha2.classList.remove('active');
             bolinha3.classList.remove('active');
             bolinha4.classList.remove('active');
+
+        // bolinhaRelatos
+
+        relate_bolinha1.classList.add('active')
+        relate_bolinha2.classList.remove('active')
+        relate_bolinha3.classList.remove('active')
+        relate_bolinha4.classList.remove('active')
+
     }
 
     if (contadorBolinha == 0) {
